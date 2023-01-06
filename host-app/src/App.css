@@ -1,0 +1,49 @@
+body, html {
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  background-color: red;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App .sidebar {
+  background: #ebebeb;
+  width: 180px;
+}
+
+.App .content {
+  background: green;
+  flex: 1;
+  position: relative;
+  display: flex;
+}
+
+.App .rightbar {
+  background: #ebebeb;
+  width: 80px;
+}
+#iframe {
+  border: 3px dashed #923dd9 !important;
+  box-sizing: border-box;
+}
+#iframe,
+#modal-iframe {
+  flex: 1;
+  border: 0px;
+}
+
+#modal-iframe {
+  display: none;
+}
+
+#modal-iframe.opened {
+  display: initial;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
